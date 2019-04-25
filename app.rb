@@ -39,16 +39,16 @@ class App < Sinatra::Base
     
     case @operation
     when 'add'
-      result += (@num1 + @num2).to_s
+      result = (@num1 + @num2).to_s
       break
     when 'subtract'
-      result += (@num1 - @num2).to_s
+      result = (@num1 - @num2).to_s
       break
     when 'multiply'
-      result += (@num1 * @num2).to_s
+      result = (@num1 * @num2).to_s
       break
     when 'divide'
-      result += (@num1 / @num2).to_s
+      result = (@num1 / @num2).to_s
       break
     end
   end
