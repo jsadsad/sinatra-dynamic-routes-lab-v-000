@@ -38,6 +38,8 @@ class App < Sinatra::Base
     result = ""
     
     case @operation
-    
+    when 'add'
+      result += (@num1 + @num2).to_s
+      
     
 end
