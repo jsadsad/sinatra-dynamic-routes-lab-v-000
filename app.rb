@@ -51,5 +51,6 @@ class App < Sinatra::Base
       result += (@num1 / @num2).to_s
       break
     end
+  end
     
 end
