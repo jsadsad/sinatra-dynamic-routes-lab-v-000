@@ -30,12 +30,14 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
   
-  get '/:operation/:number1/:number2'
+  get '/:operation/:number1/:number2' do
+    @operation = params[:operation]
     @num1 = params[:number1]
     @num2 = params[:number2]
     
     result = ""
     
-    case 
+    case @operation
+    
     
 end
